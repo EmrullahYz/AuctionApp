@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Antika Dünyası</string>
+    <string name="action_settings">settings</string>
+    <string name="spinnerName">Yayinda kalma suresi</string>
+    <string-array name="zamanDizisi">
+        <item>12 saat</item>
+        <item>24 saat</item>
+        <item>36 saat</item>
+        <item>48 saat</item>
+        <item>72 saat</item>
+    </string-array>
+    <string name="title_activity_hesap_bilgileri">HesapBilgileriActivity</string>
+</resources>

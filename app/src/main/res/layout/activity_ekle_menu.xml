@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/relLayout">
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutTopBar">
+
+            <TextView
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Ilan ekle"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:background="@drawable/white_gray_border_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/relLayoutBottomBar"
+            android:layout_below="@id/relLayoutTopBar"
+            android:layout_alignParentStart="true"
+            android:padding="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_marginBottom="0dp"
+                android:orientation="vertical"
+                android:focusable="false"
+                android:focusableInTouchMode="true">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <HorizontalScrollView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_gravity="center"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:id="@+id/addPic1"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:onClick="OnClickAdd"
+                                    android:src="@drawable/ic_add_circle_outline"/>
+                                <ImageView
+                                    android:id="@+id/addPic2"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:onClick="OnClickAdd"
+                                    android:src="@drawable/ic_add_circle_outline" />
+                                <ImageView
+                                    android:id="@+id/addPic3"
+                                    android:layout_width="120dp"
+                                    android:layout_height="120dp"
+                                    android:onClick="OnClickAdd"
+                                    android:src="@drawable/ic_add_circle_outline" />
+
+
+
+                            </LinearLayout>
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <ProgressBar
+                        android:id="@+id/mProgressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+
+                <EditText
+                    android:id="@+id/EtIlanBaslik"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Ilan Basligi girin." />
+
+                <EditText
+                    android:id="@+id/EtIlanAciklama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:hint="Ilan Aciklamasi girin." />
+
+                <EditText
+                    android:id="@+id/EtIlanFiyati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:inputType="number"
+                    android:hint="Baslangic Fiyati girin." />
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorGrey"
+                        android:text="Ilan suresini seciniz.."/>
+
+                    <Spinner
+
+                        android:id="@+id/spinnerTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/zamanDizisi"
+                        android:prompt="@string/spinnerName"
+                        android:spinnerMode="dropdown" />
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:gravity="center">
+                    <Button
+                        android:id="@+id/BtnIlanVer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ilan ver"
+                        android:background="@drawable/rounded_corner_button"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/relLayoutBottomBar"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorBackground">>
+
+            <android.support.design.widget.BottomNavigationView
+                android:id="@+id/bottomNavMenu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:itemTextColor="@color/colorWhite"
+                app:menu="@menu/bottom_navigation_menu">
+
+
+            </android.support.design.widget.BottomNavigationView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorListBack"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:id="@+id/antiqueListItemPic"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_person" />
+
+    <TextView
+        android:id="@+id/antiqueListBaslik"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/antiqueListItemPic"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="107dp"
+        android:layout_marginTop="16dp"
+        android:text="antika liste"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/antiqueListSure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="78dp"
+        android:text="kalan sure:"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/antiqueListTeklif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/antiqueListSure"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="-27dp"
+        android:text="Teklif"
+        android:textSize="12sp" />
+
+</RelativeLayout>

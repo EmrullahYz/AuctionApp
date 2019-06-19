@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#33b0ed</color>
+    <color name="colorPrimaryDark">#0f6994</color>
+    <color name="colorAccent">#dff2fa</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorBtnBack">#f2ebc5</color>
+    <color name="colorLogOutBtnBack">#ed4349</color>
+    <color name="colorChangeBtnBack">#68ed43</color>
+    <color name="colorBackground">#33b0ed</color>
+    <color name="colorText">#f5ecbe</color>
+    <color name="colorGrey">#8e8a8a</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorItem">#000000</color>
+    <color name="colorLight">#6d91df</color>
+    <color name="colorPink">#ef0d67</color>
+    <color name="colorMenuBack">#e1e0e0</color>
+    <color name="colorListBack">#ffffff</color>
+    <color name="colorRed">#ea0000</color>
+    <color name="colorGreen">#16ae25</color>
+
+
+</resources>
